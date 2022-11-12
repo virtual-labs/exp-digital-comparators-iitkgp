@@ -1,0 +1,207 @@
+<!--Lab:exp_6_Part2_cascadingcomparator
+	File name: exp7p2.html
+    Author:Sukriti Dhang--->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	table, th,td {
+  border: 1px solid black;
+  border-collapse: collapse;
+ 
+}
+th, td {
+  padding: 2px;
+  
+  /*text-align: center;  */  
+}
+
+.responsive{
+	width: 100%;
+	height: auto;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="onoffline_exp6p2.css">
+<script type="text/javascript" src="circuitw_exp6p2.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" id="">
+</script>
+</head>
+<body style="background-color: #0d213b;">
+
+ 
+<div class="row">
+	<img src="../../images/logo.jpg" class="responsive"/>
+	</div>
+	<div class="row">
+		<b><h2 style="text-align: center;color: rgb(54,230,78);">Analysis and Synthesis of Boolean Relations by cascading two comparator to realize an eight bit magnitude comparator </h2></b>
+		</div>
+
+<div class="row">
+  <div class="column" >
+    <div id="inst" style="background-color: #96baf0;   font-size: 16px;font-weight: bold; border:1px solid #3385ff;">
+        <div class="dropdown">
+			<p style="text-align:center;color:rgb(26, 0, 97)"> INSTRUCTION</p>
+			<div class="dropdown-content" style="background-color:white;  border:1px solid #3385ff;" >
+				<ol type="1">
+					<li>Apply high to  \(V_{CC}\) and low  voltage to ground (GND)</li>
+					<li>For all the combinations of the  8 bit inputs A ( \(A_7 A_6 A_5 A_4 A_3 A_2 A_1 A_0\)), B ( \(B_7 B_6 B_5 B_4 B_3 B_2 B_1 B_0\)) verify that the LEDs are ON or not.</li>
+					<li>Enter binary input A=10011011 (Decimal value is 155), B=10011011 (Decimal value is 155). Output A=B, the led will be on. </li>
+					<li>Enter binary input A=11001101 (Decimal value is 205), B=10010001 (Decimal value is 145). Output A>B, the led will be on. </li>
+					<li>Enter binary input A=1101001 (Decimal value is 105),  B=10000111 (Decimal value is 135). Output A< B, the led will be on. </li>
+					<li> Enter other input combination of A and B. </li>
+					<li><b>Note</b>: Red button symbolize as Low (L), Green button symbolize as High (H).</li>
+					
+				</ol> 
+
+              
+			</div>
+		</div>
+	</div>
+ </div><!-- first column ends here--->
+			
+</div><!--first row ends here--->
+<div class="row">
+	<div class="column2" >
+		<div id="tablein" style="background-color: #96baf0;   font-size: 16px;font-weight: bold; border:1px solid #3385ff;">
+	<div class="tbtitle">
+				<p style="text-align:center;color:rgb(26, 0, 97)">TRUTH TABLE</p>
+				
+				<div class="intbl" style="background-color:white; border:1px solid #3385ff;">
+				<center>
+				<table id = "mytable" style="overflow-y: auto;" >
+			<!--caption><b>Truth Table</b></caption-->
+			<tr><th colspan="8">A</th><th colspan="8">B</th><th colspan="9">Output</th></tr>
+			<tr><th>\(A_7\)</th><th>\(A_6\)</th><th>\(A_5\)</th><th>\(A_4\)</th><th>\(A_3\)</th><th>\(A_2\)</th><th>\(A_1\)</th><th>\(A_0\)</th><th>\(B_7\)</th><th>\(B_6\)</th><th>\(B_5\)</th><th>\(B_4\)</th><th>\(B_3\)</th><th>\(B_2\)</th><th>\(B_1\)</th><th>\(B_0\)</th><th>\(A>B\)</th><th>\(A< B\)</th><th>\(A= B\)</th></tr>
+			</table>
+			</center>
+				</div>
+	</div>
+	</div>
+	</div><!-- second column ends here--->
+	
+
+
+	<div class="column2">		
+  	 <div id="showalt" class="dropdown-content" style="background-color:white;  border:1px solid #3385ff; visibility: hidden;" >
+		<p class="con" id="msg" ></p>
+		
+   \(A_7 A_6 A_5 A_4 A_3 A_2 A_1 A_0\) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" value="" id='binaryinpA' placeholder="Binary input"  style="background-color:#e6f5ff; width:90px; " readonly/>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <br><br>
+	\(B_7 B_6 B_5 B_4 B_3 B_2 B_1 B_0\)	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" value="" id='binaryinpB' placeholder="Binary input"  style="background-color:#e6f5ff;width:90px;" readonly/>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <br><br>
+		<br><br>
+	<button id="tbl" onclick="addtotable()">Add to Table</button><br>
+  	</div>
+
+   	</div><!--message box alert-->
+ </div><!--second row ends here--->
+<div class="row">
+	<div class="column3" >
+<div id="cmaind" style="background-color: #96baf0;    font-size: 16px;font-weight: bold; border:1px solid #3385ff;">
+	<div class="ctitle"  >
+				<p style="text-align:center;color:rgb(26, 0, 97)">CIRCUIT DIAGRAM</p>
+				
+				<div class="crkt" style="background-color:white; position:absolute;  height:550px; border:2px solid #3385ff;">
+				
+				<img class="mimg" src="circuit_ic7485.png" alt="circuit image" />
+				<div id="b1r"></div>
+				<div id="b1g"></div>
+				<div id="b2r"></div>
+				<div id="b2g"></div>
+				<div id="b3r"></div>
+				<div id="b3g"></div>
+				<div id="b4r"></div>
+				<div id="b4g"></div>
+				<div id="b5r"></div>
+				<div id="b5g"></div>
+				<div id="b6r"></div>
+				<div id="b6g"></div>
+				<div id="b7r"></div>
+				<div id="b7g"></div>
+				<div id="b8r"></div>
+				<div id="b8g"></div>
+				<div id="b9r"></div>
+				<div id="b9g"></div>
+				<div id="b10r"></div>
+				<div id="b10g"></div>
+				<div id="b11r"></div>
+				<div id="b11g"></div>
+				
+				<div id="b12r"></div>
+				<div id="b12g"></div>
+				<div id="b13r"></div>
+				<div id="b13g"></div>
+				<div id="b14r"></div>
+				<div id="b14g"></div>
+				<div id="b15r"></div>
+				<div id="b15g"></div>
+				<div id="b16r"></div>
+				<div id="b16g"></div>
+				<div id="b17r"></div>
+				<div id="b17g"></div>
+				<div id="b18r"></div>
+				<div id="b18g"></div>
+				<div id="b19r"></div>
+				<div id="b19g"></div>
+				<div id="b20r"></div>
+				<div id="b20g"></div>
+				<div id="b21r"></div>
+				<div id="b21g"></div>
+				<div id="b22r"></div>
+				<div id="b22g"></div>
+				<div id="b23r"></div>
+				<div id="b23g"></div>
+				<div id="b24r"></div>
+				<div id="b24g"></div>
+				<div id="b25r"></div>
+				<div id="b25g"></div>
+				<div id="b26r"></div>
+				<div id="b26g"></div>
+		
+	<img id="b1" onClick="a1()" src="off.png" />
+	<img id="b2" onClick="a2()" src="off.png">
+	<img id="b3" onClick="a3()" src="off.png">
+	<img id="b4" onClick="a4()" src="off.png">
+	<img id="b5" onClick="a5()" src="off.png">
+	<img id="b6" onClick="a6()" src="off.png">
+	<img id="b7" onClick="a7()" src="off.png">
+	<img id="b8" onClick="a8()" src="off.png" /> 
+	<img id="b9" onClick="a9()" src="off.png">
+	<img id="b10" onClick="a10()" src="off.png">
+	<img id="b11" onClick="a11()" src="off.png">
+	<img id="b12" onClick="a12()" src="off.png" />
+	<img id="b13" onClick="a13()" src="off.png">
+	<img id="b14" onClick="a14()" src="off.png">
+	<img id="b15" onClick="a15()" src="off.png">
+	<img id="b16" onClick="a16()" src="off.png">
+	<img id="b17" onClick="a17()" src="off.png">
+	<img id="b18" onClick="a18()" src="off.png" /> 
+	<img id="b19" onClick="a19()" src="off.png">
+	<img id="b20" onClick="a20()" src="off.png">
+	<img id="b21" onClick="a21()" src="off.png">
+	<img id="b22" onClick="a22()" src="off.png">
+	<img id="b23" onClick="a23()" src="off.png">
+	
+
+	<!-- output led ( comaparator )-->
+	<img id="ledonup"  src="ledon.png" style="visibility: hidden;" />
+<img id="ledonmiddle"  src="ledon1.png" style="visibility: hidden;" />
+<img id="ledonbottom"  src="ledon2.png" style="visibility: hidden;" />
+	
+				</div><!-- ckt end here-->
+				
+				
+				</div><!--ctitle ends here-->
+				
+	
+				
+	
+	</div><!-- cmaind end here-->
+	
+</div><!-- 2nd row 1st column ends here--->
+</div><!--third row ends here--->
+
+</body>
+
+</html>
