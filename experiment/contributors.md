@@ -1,6 +1,5 @@
 
 <!-- Remove all lines above this line before making changes to the file -->
-### Subject Matter Experts
 # People
 
 <div align="center">

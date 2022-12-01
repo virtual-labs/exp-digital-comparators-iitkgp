@@ -19,7 +19,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "TTL 74LS85 is a?",
+      "question": "TTL74LS85 is a ?",
       "answers": {
         "a": "Comparator",
         "b": "Adder",
