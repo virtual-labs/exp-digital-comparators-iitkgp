@@ -1,10 +1,6 @@
-<div class="heading" id="experiment-article-section-5-heading">
-                            Procedure
-                        </div>
-
+## Procedure
 <div class="content" id="experiment-article-section-5-content">                            
                             <p><p>Please follow these steps to do the experiment.</p>
-                            <br />
                             <br />
                             
  <ul style="list-style:none">
