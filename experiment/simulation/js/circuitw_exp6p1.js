@@ -29,20 +29,20 @@ function ledchng(){
 	
 
 /*validation of vcc and gnd */
-if(image1.src.match("on") ){
+if(image1.getAttribute('src')=="images/on.png" ){
     document.getElementById("msg").innerHTML = 'Please connect GND properly (Make GND to LOW) ';
 document.getElementById("showalt").style.visibility = 'visible';
 document.getElementById("msg").style.color="red";
 }
 
-else if(image6.src.match("on") && image1.src.match("on")){
+else if(image6.getAttribute('src')=="images/on.png" && image1.getAttribute('src')=="images/on.png"){
         document.getElementById("msg").innerHTML = 'Please connect GND properly (Make GND to LOW) ';
         document.getElementById("showalt").style.visibility = 'visible';
 		document.getElementById("msg").style.color="red";
        
     }
     
-      else  if(image1.src.match("off") && image6.src.match("on") ){
+      else  if(image1.getAttribute('src')=="images/off.png" && image6.getAttribute('src')=="images/on.png" ){
             document.getElementById("msg").innerHTML = 'VCC and GND are properly connected';
             document.getElementById("showalt").style.visibility = 'visible';
 			document.getElementById("msg").style.color="green";
@@ -50,20 +50,20 @@ else if(image6.src.match("on") && image1.src.match("on")){
 		    decA_compare_decB();
         }
        
-        else if(image6.src.match("on") ){
+        else if(image6.getAttribute('src')=="images/on.png" ){
             document.getElementById("msg").innerHTML = 'VCC and GND are properly connected';
             document.getElementById("showalt").style.visibility = 'visible';
 			document.getElementById("msg").style.color="green";
             generate8bitbinary();
             decA_compare_decB();
         }
-		else if(image6.src.match("off") ){
+		else if(image6.getAttribute('src')=="images/off.png" ){
             document.getElementById("msg").innerHTML = 'Please connect VCC  properly';
             document.getElementById("showalt").style.visibility = 'visible';
 			document.getElementById("msg").style.color="red";
            
         }
-        else if (image6.src.match("off")&&(image5.src.match("on")||image7.src.match("on")||image8.src.match("on")||image9.src.match("on")||image10.src.match("on")||image11.src.match("on")||image12.src.match("on")||image13.src.match("on"))){
+        else if (image6.getAttribute('src')=="images/off.png" &&(image5.getAttribute('src')=="images/on.png"||image7.getAttribute('src')=="images/on.png"||image8.getAttribute('src')=="images/on.png"||image9.getAttribute('src')=="images/on.png"||image10.getAttribute('src')=="images/on.png"||image11.getAttribute('src')=="images/on.png"||image12.getAttribute('src')=="images/on.png"||image13.getAttribute('src')=="images/on.png")){
             document.getElementById("msg").innerHTML = 'Please connect VCC  properly';
             document.getElementById("showalt").style.visibility = 'visible';
 			document.getElementById("msg").style.color="red";
@@ -74,9 +74,9 @@ else if(image6.src.match("on") && image1.src.match("on")){
            
             document.getElementById("showalt").style.visibility = 'hidden';
             document.getElementById("ledonup").style.visibility = 'hidden';
-		document.getElementById("ledonmiddle").src="ledon1.png";
+		document.getElementById("ledonmiddle").src="images/ledon1.png";
 		document.getElementById("ledonmiddle").style.visibility = 'hidden';
-        document.getElementById("ledonbottom").src="ledon2.png";
+        document.getElementById("ledonbottom").src="images/ledon2.png";
 		document.getElementById("ledonbottom").style.visibility = 'hidden';
              }
   
@@ -95,9 +95,9 @@ else if(image6.src.match("on") && image1.src.match("on")){
 function a1() {
     var image = document.getElementById('b1');	
 
-    if (image.src.match("off")) 
+    if (image.getAttribute('src')=="images/off.png") 
 {
-    image.src = "on.png";
+    image.src = "images/on.png";
     document.getElementById('b1r').style.display="none";
     document.getElementById('b1g').style.display="block";
 
@@ -105,7 +105,7 @@ function a1() {
     } 
 else
 {
-    image.src = "off.png";
+    image.src = "images/off.png";
     document.getElementById('b1r').style.display="block";
     document.getElementById('b1g').style.display="none";
   
@@ -114,16 +114,16 @@ ledchng();
 }
 function a2() {
     var image = document.getElementById('b2');		
-    if (image.src.match("off")) 
+    if (image.getAttribute('src')=="images/off.png") 
 {
-    image.src = "on.png";
+    image.src = "images/on.png";
     document.getElementById('b2r').style.display="none";
     document.getElementById('b2g').style.display="block";
   	
     } 
 else
 {
-    image.src = "off.png";
+    image.src = "images/off.png";
     document.getElementById('b2r').style.display="block";
     document.getElementById('b2g').style.display="none";
    
@@ -132,16 +132,16 @@ else
 }
 function a3() {
     var image = document.getElementById('b3');		
-    if (image.src.match("off")) 
+    if (image.getAttribute('src')=="images/off.png") 
 {
-    image.src = "on.png";
+    image.src = "images/on.png";
     document.getElementById('b3r').style.display="none";
     document.getElementById('b3g').style.display="block";
   	
     } 
 else
 {
-    image.src = "off.png";
+    image.src = "images/off.png";
     document.getElementById('b3r').style.display="block";
     document.getElementById('b3g').style.display="none";
     
@@ -150,16 +150,16 @@ else
 }
 function a4() {
     var image = document.getElementById('b4');		
-    if (image.src.match("off")) 
+    if (image.getAttribute('src')=="images/off.png") 
 {
-    image.src = "on.png";
+    image.src = "images/on.png";
     document.getElementById('b4r').style.display="none";
     document.getElementById('b4g').style.display="block";
     	
     } 
 else
 {
-    image.src = "off.png";
+    image.src = "images/off.png";
     document.getElementById('b4r').style.display="block";
     document.getElementById('b4g').style.display="none";
    
@@ -169,16 +169,16 @@ else
 
 function a5() {
     var image = document.getElementById('b5');		
-    if (image.src.match("off")) 
+    if (image.getAttribute('src')=="images/off.png") 
 {
-    image.src = "on.png";
+    image.src = "images/on.png";
     document.getElementById('b5r').style.display="none";
     document.getElementById('b5g').style.display="block";
     Binp3=1	;	
     } 
 else
 {
-    image.src = "off.png";
+    image.src = "images/off.png";
     document.getElementById('b5r').style.display="block";
     document.getElementById('b5g').style.display="none";
     Binp3=0;
@@ -187,16 +187,16 @@ else
 }
 function a6() {
     var image = document.getElementById('b6');		
-    if (image.src.match("off")) 
+    if (image.getAttribute('src')=="images/off.png") 
 {
-    image.src = "on.png";
+    image.src = "images/on.png";
     document.getElementById('b6r').style.display="none";
     document.getElementById('b6g').style.display="block";
     	
     } 
 else
 {
-    image.src = "off.png";
+    image.src = "images/off.png";
     document.getElementById('b6r').style.display="block";
     document.getElementById('b6g').style.display="none";
    
@@ -205,16 +205,16 @@ else
 }
 function a7() {
     var image = document.getElementById('b7');		
-    if (image.src.match("off")) 
+    if (image.getAttribute('src')=="images/off.png") 
 {
-    image.src = "on.png";
+    image.src = "images/on.png";
     document.getElementById('b7r').style.display="none";
     document.getElementById('b7g').style.display="block";
     Ainp3=1;
     } 
 else
 {
-    image.src = "off.png";
+    image.src = "images/off.png";
     document.getElementById('b7r').style.display="block";
     document.getElementById('b7g').style.display="none";
     Ainp3=0;
@@ -223,16 +223,16 @@ else
 }
 function a8() {
     var image = document.getElementById('b8');		
-    if (image.src.match("off")) 
+   if (image.getAttribute('src')=="images/off.png") 
 {
-    image.src = "on.png";
+    image.src = "images/on.png";
     document.getElementById('b8r').style.display="none";
     document.getElementById('b8g').style.display="block";
    Binp2=1;
     } 
 else
 {
-    image.src = "off.png";
+    image.src = "images/off.png";
     document.getElementById('b8r').style.display="block";
     document.getElementById('b8g').style.display="none";
     Binp2=0;
@@ -241,16 +241,16 @@ else
 }
 function a9() {
     var image = document.getElementById('b9');		
-    if (image.src.match("off")) 
+   if (image.getAttribute('src')=="images/off.png") 
 {
-    image.src = "on.png";
+    image.src = "images/on.png";
     document.getElementById('b9r').style.display="none";
     document.getElementById('b9g').style.display="block";
     Ainp2=1;	
     } 
 else
 {
-    image.src = "off.png";
+    image.src = "images/off.png";
     document.getElementById('b9r').style.display="block";
     document.getElementById('b9g').style.display="none";
     Ainp2=0;
@@ -259,16 +259,16 @@ else
 }
 function a10() {
     var image = document.getElementById('b10');		
-    if (image.src.match("off")) 
+   if (image.getAttribute('src')=="images/off.png") 
 {
-    image.src = "on.png";
+    image.src = "images/on.png";
     document.getElementById('b10r').style.display="none";
     document.getElementById('b10g').style.display="block";
 	Ainp1=1;	
     } 
 else
 {
-    image.src = "off.png";
+    image.src = "images/off.png";
     document.getElementById('b10r').style.display="block";
     document.getElementById('b10g').style.display="none";
 	Ainp1=0;
@@ -277,16 +277,16 @@ else
 }
 function a11() {
     var image = document.getElementById('b11');		
-    if (image.src.match("off")) 
+    if (image.getAttribute('src')=="images/off.png") 
 {
-    image.src = "on.png";
+    image.src = "images/on.png";
     document.getElementById('b11r').style.display="none";
     document.getElementById('b11g').style.display="block";
 	Binp1=1;	
     } 
 else
 {
-    image.src = "off.png";
+    image.src = "images/off.png";
     document.getElementById('b11r').style.display="block";
     document.getElementById('b11g').style.display="none";
     Binp1=0;
@@ -295,16 +295,16 @@ else
 }
 function a12() {
     var image = document.getElementById('b12');		
-    if (image.src.match("off")) 
+   if (image.getAttribute('src')=="images/off.png")
 {
-    image.src = "on.png";
+    image.src = "images/on.png";
     document.getElementById('b12r').style.display="none";
     document.getElementById('b12g').style.display="block";
 	Ainp0=1;	
     } 
 else
 {
-    image.src = "off.png";
+    image.src = "images/off.png";
     document.getElementById('b12r').style.display="block";
     document.getElementById('b12g').style.display="none";
     Ainp0=0;
@@ -313,16 +313,16 @@ else
 }
 function a13() {
     var image = document.getElementById('b13');		
-    if (image.src.match("off")) 
+   if (image.getAttribute('src')=="images/off.png")
 {
-    image.src = "on.png";
+    image.src = "images/on.png";
     document.getElementById('b13r').style.display="none";
     document.getElementById('b13g').style.display="block";
 	Ainp0=1;	
     } 
 else
 {
-    image.src = "off.png";
+    image.src = "images/off.png";
     document.getElementById('b13r').style.display="block";
     document.getElementById('b13g').style.display="none";
     Ainp0=0;
@@ -374,31 +374,31 @@ function binarytodecimal_B(){
 /*compare two decimal value*/
 function decA_compare_decB(){
 	if(dec_valueA == dec_valueB){
-		document.getElementById("ledonmiddle").src="ledon1.png";
+		document.getElementById("ledonmiddle").src="images/ledon1.png";
 		document.getElementById("ledonmiddle").style.visibility = 'visible';
 		dec_compare='001';
 	}
 	else{
-		document.getElementById("ledonmiddle").src="ledon1.png";
+		document.getElementById("ledonmiddle").src="images/ledon1.png";
 		document.getElementById("ledonmiddle").style.visibility = 'hidden';
 	}
 	 if(dec_valueA>dec_valueB){
-		document.getElementById("ledonup").src="ledon.png";
+		document.getElementById("ledonup").src="images/ledon.png";
 		document.getElementById("ledonup").style.visibility = 'visible';
 		dec_compare='100';
 	}
 	else{
-		document.getElementById("ledonup").src="ledon.png";
+		document.getElementById("ledonup").src="images/ledon.png";
 		document.getElementById("ledonup").style.visibility = 'hidden';
 	}
 
 	 if(dec_valueA<dec_valueB){
-		document.getElementById("ledonbottom").src="ledon2.png";
+		document.getElementById("ledonbottom").src="images/ledon2.png";
 		document.getElementById("ledonbottom").style.visibility = 'visible';
 		dec_compare='010';
 	}
 	else{
-		document.getElementById("ledonbottom").src="ledon2.png";
+		document.getElementById("ledonbottom").src="images/ledon2.png";
 		document.getElementById("ledonbottom").style.visibility = 'hidden';
 	}
 	//alert(dec_sum);
