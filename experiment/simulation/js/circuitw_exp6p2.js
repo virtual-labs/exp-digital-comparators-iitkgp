@@ -591,12 +591,12 @@ function decA_compare_decB(){
 		document.getElementById("ledonmiddle").style.visibility = 'hidden';
 	}
 	 if(dec_valueA>dec_valueB){
-		document.getElementById("ledonup").src="ledon.png";
+		document.getElementById("ledonup").src="images/ledon.png";
 		document.getElementById("ledonup").style.visibility = 'visible';
 		dec_compare='100';
 	}
 	else{
-		document.getElementById("ledonup").src="ledon.png";
+		document.getElementById("ledonup").src="images/ledon.png";
 		document.getElementById("ledonup").style.visibility = 'hidden';
 	}
 
