@@ -31,7 +31,7 @@
 <b>Name of Developer | <b> **Prof. Achintya Halder**
 :--|:--|
 <b> Institute | <b>  **Indian Institute of Technology Kharagpur**
-<b> Email id|     <b>  **achintya@ece.iitkgp.ac.in **
+<b> Email id|     <b>  **achintya@ece.iitkgp.ac.in**
 <b> Department |  **Electronics & Electrical Communication Engineering**
 
 
