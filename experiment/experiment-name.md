@@ -1,1 +1,1 @@
-## Experiment name
+## Analysis and Synthesis of Boolean Relations using Digital Comparators &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="images/iitkgp.png" width="3%" />
