@@ -1,0 +1,112 @@
+
+/home/runner/work/exp-digital-comparators-iitkgp/exp-digital-comparators-iitkgp/experiment/simulation/js/circuitw_exp6p1.js
+   17:9   warning  'image2' is assigned a value but never used                                                                            no-unused-vars
+   18:9   warning  'image3' is assigned a value but never used                                                                            no-unused-vars
+   19:9   warning  'image4' is assigned a value but never used                                                                            no-unused-vars
+   38:9   warning  This branch can never execute. Its condition is a duplicate or covered by previous conditions in the if-else-if chain  no-dupe-else-if
+   50:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+   66:18  warning  This branch can never execute. Its condition is a duplicate or covered by previous conditions in the if-else-if chain  no-dupe-else-if
+   95:10  warning  'a1' is defined but never used                                                                                         no-unused-vars
+  115:10  warning  'a2' is defined but never used                                                                                         no-unused-vars
+  122:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  133:10  warning  'a3' is defined but never used                                                                                         no-unused-vars
+  140:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  151:10  warning  'a4' is defined but never used                                                                                         no-unused-vars
+  158:4   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  170:10  warning  'a5' is defined but never used                                                                                         no-unused-vars
+  188:10  warning  'a6' is defined but never used                                                                                         no-unused-vars
+  195:4   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  206:10  warning  'a7' is defined but never used                                                                                         no-unused-vars
+  224:10  warning  'a8' is defined but never used                                                                                         no-unused-vars
+  242:10  warning  'a9' is defined but never used                                                                                         no-unused-vars
+  260:10  warning  'a10' is defined but never used                                                                                        no-unused-vars
+  278:10  warning  'a11' is defined but never used                                                                                        no-unused-vars
+  296:10  warning  'a12' is defined but never used                                                                                        no-unused-vars
+  314:10  warning  'a13' is defined but never used                                                                                        no-unused-vars
+  385:1   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  395:1   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  410:10  warning  'addtotable' is defined but never used                                                                                 no-unused-vars
+  412:5   warning  'inputa' is not defined                                                                                                no-undef
+  413:5   warning  'inputb' is not defined                                                                                                no-undef
+  415:5   warning  'outputcompare' is not defined                                                                                         no-undef
+  417:11  warning  'inputa' is not defined                                                                                                no-undef
+  418:11  warning  'inputa' is not defined                                                                                                no-undef
+  419:11  warning  'inputa' is not defined                                                                                                no-undef
+  420:11  warning  'inputa' is not defined                                                                                                no-undef
+  421:11  warning  'inputb' is not defined                                                                                                no-undef
+  422:11  warning  'inputb' is not defined                                                                                                no-undef
+  423:11  warning  'inputb' is not defined                                                                                                no-undef
+  424:11  warning  'inputb' is not defined                                                                                                no-undef
+  425:11  warning  'outputcompare' is not defined                                                                                         no-undef
+  426:11  warning  'outputcompare' is not defined                                                                                         no-undef
+  427:12  warning  'outputcompare' is not defined                                                                                         no-undef
+
+/home/runner/work/exp-digital-comparators-iitkgp/exp-digital-comparators-iitkgp/experiment/simulation/js/circuitw_exp6p2.js
+   17:9   warning  'image2' is assigned a value but never used                                                                            no-unused-vars
+   19:9   warning  'image4' is assigned a value but never used                                                                            no-unused-vars
+   29:6   warning  'image14' is assigned a value but never used                                                                           no-unused-vars
+   30:9   warning  'image15' is assigned a value but never used                                                                           no-unused-vars
+   32:6   warning  'image17' is assigned a value but never used                                                                           no-unused-vars
+   33:6   warning  'image18' is assigned a value but never used                                                                           no-unused-vars
+   34:6   warning  'image19' is assigned a value but never used                                                                           no-unused-vars
+   35:9   warning  'image20' is assigned a value but never used                                                                           no-unused-vars
+   36:9   warning  'image21' is assigned a value but never used                                                                           no-unused-vars
+   37:9   warning  'image22' is assigned a value but never used                                                                           no-unused-vars
+   38:9   warning  'image23' is assigned a value but never used                                                                           no-unused-vars
+   60:9   warning  This branch can never execute. Its condition is a duplicate or covered by previous conditions in the if-else-if chain  no-dupe-else-if
+   66:12  warning  This branch can never execute. Its condition is a duplicate or covered by previous conditions in the if-else-if chain  no-dupe-else-if
+   71:15  warning  This branch can never execute. Its condition is a duplicate or covered by previous conditions in the if-else-if chain  no-dupe-else-if
+   76:15  warning  This branch can never execute. Its condition is a duplicate or covered by previous conditions in the if-else-if chain  no-dupe-else-if
+  122:10  warning  'a1' is defined but never used                                                                                         no-unused-vars
+  142:10  warning  'a2' is defined but never used                                                                                         no-unused-vars
+  160:10  warning  'a3' is defined but never used                                                                                         no-unused-vars
+  167:2   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  178:10  warning  'a4' is defined but never used                                                                                         no-unused-vars
+  197:10  warning  'a5' is defined but never used                                                                                         no-unused-vars
+  215:10  warning  'a6' is defined but never used                                                                                         no-unused-vars
+  233:10  warning  'a7' is defined but never used                                                                                         no-unused-vars
+  251:10  warning  'a8' is defined but never used                                                                                         no-unused-vars
+  269:10  warning  'a9' is defined but never used                                                                                         no-unused-vars
+  287:10  warning  'a10' is defined but never used                                                                                        no-unused-vars
+  305:10  warning  'a11' is defined but never used                                                                                        no-unused-vars
+  323:10  warning  'a12' is defined but never used                                                                                        no-unused-vars
+  341:10  warning  'a13' is defined but never used                                                                                        no-unused-vars
+  359:10  warning  'a14' is defined but never used                                                                                        no-unused-vars
+  378:10  warning  'a15' is defined but never used                                                                                        no-unused-vars
+  396:10  warning  'a16' is defined but never used                                                                                        no-unused-vars
+  403:4   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  414:10  warning  'a17' is defined but never used                                                                                        no-unused-vars
+  432:10  warning  'a18' is defined but never used                                                                                        no-unused-vars
+  450:10  warning  'a19' is defined but never used                                                                                        no-unused-vars
+  468:10  warning  'a20' is defined but never used                                                                                        no-unused-vars
+  486:10  warning  'a21' is defined but never used                                                                                        no-unused-vars
+  504:10  warning  'a22' is defined but never used                                                                                        no-unused-vars
+  522:10  warning  'a23' is defined but never used                                                                                        no-unused-vars
+  593:1   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  603:1   warning  Mixed spaces and tabs                                                                                                  no-mixed-spaces-and-tabs
+  618:10  warning  'addtotable' is defined but never used                                                                                 no-unused-vars
+  620:5   warning  'inputa' is not defined                                                                                                no-undef
+  621:5   warning  'inputb' is not defined                                                                                                no-undef
+  623:5   warning  'outputcompare' is not defined                                                                                         no-undef
+  626:11  warning  'inputa' is not defined                                                                                                no-undef
+  627:11  warning  'inputa' is not defined                                                                                                no-undef
+  628:11  warning  'inputa' is not defined                                                                                                no-undef
+  629:11  warning  'inputa' is not defined                                                                                                no-undef
+  630:11  warning  'inputa' is not defined                                                                                                no-undef
+  631:11  warning  'inputa' is not defined                                                                                                no-undef
+  632:11  warning  'inputa' is not defined                                                                                                no-undef
+  633:11  warning  'inputa' is not defined                                                                                                no-undef
+  635:11  warning  'inputb' is not defined                                                                                                no-undef
+  636:11  warning  'inputb' is not defined                                                                                                no-undef
+  637:12  warning  'inputb' is not defined                                                                                                no-undef
+  638:12  warning  'inputb' is not defined                                                                                                no-undef
+  639:12  warning  'inputb' is not defined                                                                                                no-undef
+  640:12  warning  'inputb' is not defined                                                                                                no-undef
+  641:12  warning  'inputb' is not defined                                                                                                no-undef
+  642:12  warning  'inputb' is not defined                                                                                                no-undef
+  644:12  warning  'outputcompare' is not defined                                                                                         no-undef
+  645:12  warning  'outputcompare' is not defined                                                                                         no-undef
+  646:12  warning  'outputcompare' is not defined                                                                                         no-undef
+
+✖ 105 problems (0 errors, 105 warnings)
+
