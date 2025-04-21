@@ -318,14 +318,14 @@ function a13() {
     image.src = "images/on.png";
     document.getElementById('b13r').style.display="none";
     document.getElementById('b13g').style.display="block";
-	Ainp0=1;	
+	Binp0=1;	
     } 
 else
 {
     image.src = "images/off.png";
     document.getElementById('b13r').style.display="block";
     document.getElementById('b13g').style.display="none";
-    Ainp0=0;
+    Binp0=0;
     }
     ledchng();
 }
