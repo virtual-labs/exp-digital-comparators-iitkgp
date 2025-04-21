@@ -1,0 +1,29 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Digital Comparator is a?",
+      "answers": {
+        "a": "sequential circuit",
+        "b": "complex circuit",
+        "c": "combinational circuit",
+        "d": "gate"
+      },
+     
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "TTL74LS85 is a ?",
+      "answers": {
+        "a": "Comparator",
+        "b": "Adder",
+        "c": "Substractor",
+        "d": "Encoder"
+      },
+     
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    }
+  ]
+}
