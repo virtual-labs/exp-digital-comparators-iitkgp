@@ -61,6 +61,10 @@ else if(image6.getAttribute('src')=="images/on.png" && image1.getAttribute('src'
             document.getElementById("msg").innerHTML = 'Please connect VCC  properly';
             document.getElementById("showalt").style.visibility = 'visible';
 			document.getElementById("msg").style.color="red";
+            document.getElementById("ledonup").style.visibility = 'hidden';
+            document.getElementById("ledonmiddle").style.visibility = 'hidden';
+            document.getElementById("ledonbottom").style.visibility = 'hidden';
+
            
         }
         else if (image6.getAttribute('src')=="images/off.png" &&(image5.getAttribute('src')=="images/on.png"||image7.getAttribute('src')=="images/on.png"||image8.getAttribute('src')=="images/on.png"||image9.getAttribute('src')=="images/on.png"||image10.getAttribute('src')=="images/on.png"||image11.getAttribute('src')=="images/on.png"||image12.getAttribute('src')=="images/on.png"||image13.getAttribute('src')=="images/on.png")){
